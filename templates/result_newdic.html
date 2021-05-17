@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+ <div class="jumbotron text-center", style="margin-bottom : 0px">
+    <p class="lead">Explore the matched aminoacids near the unmatched phosphorylation sites.</p>
+     <table class="table">
+    <thead>
+      <tr>
+        <th>Mouse protein ID</th>
+        <th>Highest score human protein</th>
+        <th>Locations</th>
+        <th>Sites</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+{% for row in rows %}
+    <tr>
+         <td>{{row[0]}}</td>
+        <td>{{row[3]}}</td>
+         <td>{{row[1]}}</td>
+         <td>{{row[2]}}</td>
+
+    </tr>
+{% endfor %}
+      </tr>
+    
+    </tbody>
+  </table>
+  </div>
+        <img src="3.jpg" class="img-fluid" alt="Responsive image">
+
+{% endblock %}

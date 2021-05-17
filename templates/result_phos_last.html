@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+ <div class="jumbotron text-center", style="margin-bottom : 0px">
+    <p class="lead">Explore the sites of the mouse protein ,which matched with phosphorylation sites of the highest score human protein, are also known as phosphorylation site</p>
+         <table class="table">
+    <thead>
+      <tr>
+        <th>Mouse protein ID</th>
+        <th>Highest score human protein</th>
+        <th>Matched sites also known as phosphorylation site</th>
+        <th>Matched sites not known as phosphorylation site</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{protein}}</td>
+        <td>{{human_n}}</td>
+        <td>{{both}}</td>
+        <td>{{only}}</td>
+      </tr>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+        <img src="3.jpg" class="img-fluid" alt="Responsive image">
+
+{% endblock %}
+

@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+ <div class="jumbotron text-center", style="margin-bottom : 0px">
+    <h2>Can unmatched sites match near the phosphorylation sites?</h2>
+    <p class="lead">Explore the matched aminoacids near the unmatched phosphorylation sites.</p>
+    <h3>{{error}}</h3>
+    <form method="POST">
+    Mouse Protein ID: <input type="text" name="protein3"><br>
+    Range : <input type="text" name="distance"><br>
+    <input type="submit" value="Submit"><br>
+    </form>   
+  </div>
+        <img src="3.jpg" class="img-fluid" alt="Responsive image">
+
+{% endblock %}
+
